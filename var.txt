@@ -1,0 +1,2 @@
+basic		#F6C34F
+secondary	#4B160F
