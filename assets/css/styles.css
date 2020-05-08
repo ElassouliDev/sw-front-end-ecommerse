@@ -16,6 +16,12 @@
     transition: .3s ease-in-out;
 }
 
+img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
 a:focus,
 a:hover,
 button,
@@ -219,7 +225,7 @@ header .custom-search {
 /* Section Ads Start */
 #ads {
     background-color: #4a4a4a;
-    height: 10rem;
+    height: 6rem;
 }
 
 /* Section Ads End */
@@ -227,7 +233,7 @@ header .custom-search {
 /* Section Mat Start */
 #mat {
     margin-top: 5rem;
-    background-image: url(/assets/images/pizza-3007395_1920.jpg);
+    background: url("../images/pizza-3007395_1920.jpg");
     background-size: cover;
     height: 22.3rem;
     margin-bottom: 5rem;
@@ -235,7 +241,7 @@ header .custom-search {
 
 #godis {
     margin-top: 3rem;
-    background-image: url(/assets/images/abundance-1868573_1920.jpg);
+    background-image: url(../images/abundance-1868573_1920.jpg);
     background-position: center;
     height: 22.3rem;
     margin-bottom: 5rem;
@@ -243,7 +249,7 @@ header .custom-search {
 
 #halsa {
     margin-top: 5rem;
-    background-image: url(/assets/images/glass-3081015_1920.jpg);
+    background-image: url(../images/glass-3081015_1920.jpg);
     background-position: 0rem 32rem;
     background-size: cover;
     height: 22.3rem;
@@ -252,7 +258,7 @@ header .custom-search {
 
 #stad {
     margin-top: 3rem;
-    background-image: url(/assets/images/gloves-4017614_1920.jpg);
+    background-image: url(../images/gloves-4017614_1920.jpg);
     background-position: 0rem -12.6rem;
     background-size: cover;
     height: 22.3rem;
@@ -261,8 +267,44 @@ header .custom-search {
 
 #hem {
     margin-top: 3rem;
-    background-image: url(/assets/images/kitchen-1940174_1920.jpg);
+    background-image: url(../images/kitchen-1940174_1920.jpg);
     background-position: 0rem -23.5rem;
+    background-size: cover;
+    height: 22.3rem;
+    margin-bottom: 5rem;
+}
+
+#husgerad {
+    margin-top: 3rem;
+    background-image: url(../images/XEfztHxiOw.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 22.3rem;
+    margin-bottom: 5rem;
+}
+
+#klassAndParty {
+    margin-top: 3rem;
+    background-image: url(../images/restaurant-2697945_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 22.3rem;
+    margin-bottom: 5rem;
+}
+
+#kladerAndFashion {
+    margin-top: 3rem;
+    background-image: url(../images/fashion-1031469_1920.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 22.3rem;
+    margin-bottom: 5rem;
+}
+
+#gym {
+    margin-top: 3rem;
+    background-image: url(../images/training-828726_1920.jpg);
+    background-position: 88% 82%;
     background-size: cover;
     height: 22.3rem;
     margin-bottom: 5rem;
@@ -378,4 +420,83 @@ header .custom-search {
 .swiper-slide .content p {
     font-size: .8rem;
     margin: 0;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    color: #fff;
+}
+
+footer ul li>h6 {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+footer ul li {
+    padding: 6px 0 !important;
+}
+
+footer ul li>a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+footer ul p {
+    margin: 0 !important;
+}
+
+footer ul li>a:hover {
+    color: var(--basic-color);
+}
+
+footer hr {
+    border-top: 1px solid rgba(246, 195, 79, 0.4);
+}
+
+footer .footerPayment {
+    border: 1px solid #fff;
+    padding: 18px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+footer .footerPayment .title {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: var(--basic-color);
+    padding: 2px 20px;
+    border-radius: 6px;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+footer .footerPayment .img {
+    width: 28%;
+    height: 34px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    display: inline-block;
+    background: #fff;
+    padding: 6px;
+}
+
+footer .social {
+    float: right;
+}
+
+footer .social>i {
+    background-color: #fff;
+    padding: 7px 13px;
+    color: var(--secondary-color);
+    font-size: 13px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+footer .social>i:last-child {
+    margin-right: 0;
 }
