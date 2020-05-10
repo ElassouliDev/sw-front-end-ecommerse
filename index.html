@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
 
     <!-- Start Top Navbar -->
     <nav>
@@ -30,14 +33,14 @@
     <!-- End Top Navbar -->
 
     <!-- Start Header -->
-    <header>
+    <header id="fixedHeader" class="">
         <div class="wrapper">
             <div class="header">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="#">
                         <img src="assets/Group 904.svg" alt="">
                     </a>
-                    <div class="navbar-collapse">
+                    <div class="collapse navbar-collapse">
                         <div class="input-group mx-auto my-lg-0 custom-search">
                             <div class="input-group-prepend">
                                 <button class="btn btn-outline-secondary dropdown-toggle" type="button"
@@ -1203,7 +1206,9 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <ul>
-                        <li><h6>Information</h6></li>
+                        <li>
+                            <h6>Information</h6>
+                        </li>
                         <li><a href="#">Blitzz</a></li>
                         <li><a href="#">Newsletter</a></li>
                         <li><a href="#">Cookie Settings</a></li>
@@ -1217,7 +1222,9 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <ul>
-                        <li><h6>Shop Service</h6></li>
+                        <li>
+                            <h6>Shop Service</h6>
+                        </li>
                         <li><a href="#">My Account</a></li>
                         <li><a href="#">My Orders</a></li>
                         <li><a href="#">My Addresses</a></li>
@@ -1229,25 +1236,36 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <ul>
-                        <li><h6>Smartkop Gmbp</h6></li>
+                        <li>
+                            <h6>Smartkop Gmbp</h6>
+                        </li>
                         <p>Schwelrner, Str. 185</p>
                         <p>42389 Wuppertal, Germany</p>
                         <br>
-                        <li><h6>Custom Service</h6></li>
+                        <li>
+                            <h6>Custom Service</h6>
+                        </li>
                         <p>Monday To Friday: 8Am To 6Pm</p>
                         <br>
-                        <li><h6>00000000000000</h6></li>
+                        <li>
+                            <h6>00000000000000</h6>
+                        </li>
                         <br>
-                        <li><h6>info@smartkop.se</h6></li>
+                        <li>
+                            <h6>info@smartkop.se</h6>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <ul>
-                        <li><h6>Newsletter</h6></li>
-                        <li>Subscribe to the free newsletter and ensure that you will no longer miss any offers or news of smartkop.</li>
+                        <li>
+                            <h6>Newsletter</h6>
+                        </li>
+                        <li>Subscribe to the free newsletter and ensure that you will no longer miss any offers or news
+                            of smartkop.</li>
                         <li>
                             <form action="">
-                                
+
                                 <input type="text" class="form-control" name="email" placeholder="Your E-Mail">
                                 <input type="checkbox">
                                 I Have Read The Data Protection Information
@@ -1286,7 +1304,7 @@
                         <div class="img">
                             <img src="assets/images/postnord_logo.png" alt="">
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -1316,7 +1334,7 @@
                         <div class="img">
                             <img src="assets/images/postnord_logo.png" alt="">
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -1346,7 +1364,7 @@
                         <div class="img">
                             <img src="assets/images/postnord_logo.png" alt="">
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -1355,7 +1373,9 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col-12">
-                    Copyright &copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> smartkop , All Right Reserved
+                    Copyright &copy; <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script> smartkop , All Right Reserved
                     <span class="social">
                         <i>f</i>
                         <i>f</i>
@@ -1370,9 +1390,11 @@
 
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+    </script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>

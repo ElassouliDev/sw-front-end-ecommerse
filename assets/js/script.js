@@ -24,3 +24,27 @@ var swiperMat = new Swiper('.swiper-container', {
         },
     }
 });
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $('#loader-wrapper').animate().hide('slow');
+    }, 1000)
+});
+$(window).on("load", function () {
+    setTimeout(function () {
+        $('#loader-wrapper').animate().hide('slow');
+    }, 1000)
+});
+
+$(document).ready(e => handleScroll(e))
+$(document).scroll(e => handleScroll(e))
+
+function handleScroll(e) {
+    var offset = $(this).scrollTop();
+    if (offset <= 20) {
+        $('#fixedHeader').removeClass('fixedHeader');
+    } else {
+        $('#fixedHeader').addClass('fixedHeader');
+    }
+    e.stopPropagation();
+}
