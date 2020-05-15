@@ -192,13 +192,12 @@ body {
 
 /* Header Start */
 
-header {
+#fixedHeader {
     background: var(--basic-bg);
     padding: 1rem 0;
-    transition: .3s linear;
 }
 
-header.fixedHeader {
+.fixedHeader {
     position: fixed;
     width: 100%;
     top: 0;
@@ -206,7 +205,19 @@ header.fixedHeader {
 }
 
 header .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    flex-flow: row;
+    flex-grow: 2;
     padding: .5rem 0rem !important;
+}
+
+header .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .navbar .dropdown-menu.show {
@@ -218,7 +229,7 @@ header .navbar .dropdown-menu a {
 }
 
 header .custom-search {
-    width: 34rem;
+    width: 60%;
 }
 
 .custom-search button {
@@ -231,6 +242,20 @@ header .custom-search {
     background-color: #fff !important;
     font-weight: bolder;
     z-index: 2;
+}
+
+.custom-search .icons {
+    position: absolute;
+    right: 1rem;
+    font-size: 15px;
+    top: .5rem;
+    font-weight: 100;
+    font-style: normal;
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: +999;
 }
 
 .custom-search button::before,
@@ -288,6 +313,7 @@ header .custom-search {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -551,6 +577,36 @@ footer ul li>a {
     color: #fff;
 }
 
+footer ul li input[type=text] {
+    background: #baa6a4 !important;
+    color: var(--secondary-color);
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+}
+
+footer ul li .form-check {
+    margin: .6rem 1rem;
+}
+
+footer ul li .form-group {
+    position: relative;
+}
+
+footer ul li .fas.fa-arrow-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+    color: var(--secondary-color);
+    background: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
 footer ul p {
     margin: 0 !important;
 }
@@ -569,6 +625,7 @@ footer .footerPayment {
     border-radius: 15px;
     position: relative;
     margin-bottom: 15px;
+    height: 190px;
 }
 
 footer .footerPayment .title {
@@ -603,8 +660,227 @@ footer .social>i {
     font-size: 13px;
     border-radius: 3px;
     margin-right: 5px;
+    font-weight: bolder;
 }
 
 footer .social>i:last-child {
     margin-right: 0;
+}
+
+.footerPayment.application {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerPayment.application .app-img {
+    width: 13rem;
+    margin: 4px;
+}
+
+#coming_soon {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100% 58%;
+}
+
+#coming_soon::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 22, 15, 0.4);
+}
+
+#coming_soon::after {
+    content: '';
+    position: absolute;
+    left: 21%;
+    top: 6%;
+    width: 56%;
+    height: 40%;
+    background-image: url(../images/coming-soon.png);
+    background-size: cover;
+    background-position: 100%;
+}
+
+#coming_soon .content,
+#page_404 .content {
+    padding: 20px;
+    padding-top: 2.8rem;
+    text-align: center;
+    width: 45vw;
+    height: 260px;
+    position: absolute;
+    bottom: 0rem;
+    left: 26.6%;
+
+}
+
+#coming_soon .content h1,
+#page_404 .content h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+#coming_soon .content p,
+#page_404 .content p {
+    color: #fff;
+    font-size: 0.7rem;
+    width: 55%;
+    margin: 2rem auto 1.5rem;
+}
+
+#coming_soon .content a,
+#coming_soon .content a:hover,
+#page_404 .content a,
+#page_404 .content a:hover {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    background: var(--basic-bg) !important;
+    padding: .8rem 5rem !important;
+    border-radius: .5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#page_404 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100% 58%;
+}
+
+
+#page_404::after {
+    content: '';
+    position: absolute;
+    left: 22%;
+    top: 6%;
+    width: 60%;
+    height: 55%;
+    background-image: url(../icons/404.svg);
+    background-size: cover;
+    background-position: 100%;
+}
+
+#page_404 .content h1,
+#page_404 .content p {
+    color: var(--secondary-color);
+    margin: 1rem auto;
+}
+
+#page_404 .content h1 span {
+    color: var(--basic-color);
+}
+
+#header_page {
+    margin: 4rem 0;
+}
+
+#header_page .list-group {
+    border: 1px solid rgba(0, 0, 0, .125);
+    padding: .4rem 1rem !important;
+    border-radius: 1rem;
+    background-color: #fafafa;
+}
+
+#header_page .list-group-item {
+    background-color: #fafafa;
+    padding: .5rem 0rem !important;
+    font-size: .7rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+#header_page .list-group-item:last-child {
+    border-bottom: none
+}
+
+#header_page .list-group-item a,
+#header_page .list-group-item a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#header_page .title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: var(--secondary-color);
+    color: var(--basic-color);
+    font-size: 2.4rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+}
+
+#header_page .paragraph {
+    font-size: .7rem;
+    color: var(--secondary-color);
+    line-height: 1.8;
+}
+
+#header_page .rule {
+    background: #fafafa;
+}
+
+#header_page .rule h3 {
+    background: var(--basic-bg);
+    padding: .4rem .6rem !important;
+    font-size: .8rem;
+    font-weight: bolder;
+}
+
+.card-info {
+    position: relative;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: .8rem;
+}
+
+.card-info .info-img {
+    position: absolute;
+    top: -2rem;
+    left: 34%;
+    padding: .6rem;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.card-info .info-img i {
+    padding: 1.4rem;
+    background: var(--secondary-color);
+    border-radius: 100%;
+    color: var(--basic-color);
+    font-size: 1.2rem;
+}
+
+.card-info .info-content {
+    padding-top: 3.3rem;
+    color: var(--secondary-color);
+}
+
+.card-info .info-content h6 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem !important;
+}
+
+.card-info .info-content p {
+    margin: 0;
+    font-size: .8rem;
+    font-weight: bolder;
 }

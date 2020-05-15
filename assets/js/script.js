@@ -28,7 +28,7 @@ var swiperMat = new Swiper('.swiper-container', {
 $(document).ready(function () {
     setTimeout(function () {
         $('#loader-wrapper').animate().hide('slow');
-    }, 1000)
+    }, 10)
 });
 $(window).on("load", function () {
     setTimeout(function () {
@@ -46,5 +46,4 @@ function handleScroll(e) {
     } else {
         $('#fixedHeader').addClass('fixedHeader');
     }
-    e.stopPropagation();
 }
