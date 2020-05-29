@@ -1,9 +1,11 @@
 var swiperMat = new Swiper('.swiper-container', {
-    slidesPerView: 1,
+    slidesPerView: 9,
     centeredSlides: true,
     spaceBetween: 10,
     freeMode: true,
+    loop: false,
     setWrapperSize: true,
+    initialSlide: 3,
     grabCursor: true,
     pagination: {
         el: '.swiper-pagination',
@@ -19,7 +21,7 @@ var swiperMat = new Swiper('.swiper-container', {
             spaceBetween: 40,
         },
         1024: {
-            slidesPerView: 5,
+            slidesPerView: 9,
             spaceBetween: 10,
         },
     }
@@ -41,9 +43,19 @@ $(document).scroll(e => handleScroll(e))
 
 function handleScroll(e) {
     var offset = $(this).scrollTop();
-    if (offset <= 20) {
-        $('#fixedHeader').removeClass('fixedHeader');
-    } else {
+    if (offset > 150) {
         $('#fixedHeader').addClass('fixedHeader');
+    } else {
+        $('#fixedHeader').removeClass('fixedHeader');
     }
 }
+
+// List Items Pages
+$(function () {
+    $('.list-group-item').on('click', function () {
+        $(this).toggleClass('focus');
+        $('.fa', this)
+            .toggleClass('fa-chevron-right')
+            .toggleClass('fa-chevron-down');
+    });
+});

@@ -1,0 +1,9 @@
+<svg id="Group_896" data-name="Group 896" xmlns="http://www.w3.org/2000/svg" width="211.879" height="64.888" viewBox="0 0 211.879 64.888">
+  <rect id="Rectangle_4" data-name="Rectangle 4" width="211.879" height="64.888" rx="10"/>
+  <path id="Path" d="M.763,0,16.319,15.527.838,31.19a1.955,1.955,0,0,1-.7-1.711C.132,27.94.009,3.512,0,1.68A1.793,1.793,0,0,1,.763,0Z" transform="translate(17.236 21.46)" fill="#00d0fa"/>
+  <path id="Path-2" data-name="Path" d="M19.575,10.524.66.208A1.9,1.9,0,0,0,0,0L15.09,15.063Z" transform="translate(19.109 21.273)" fill="#00f071"/>
+  <path id="Path-3" data-name="Path" d="M4.679,9.4,0,4.729,4.674,0l6.437,3.51c1.586.864.775,1.946,0,2.37Z" transform="translate(34.846 32.253)" fill="#fecd00"/>
+  <path id="Path-4" data-name="Path" d="M0,15.021a3.259,3.259,0,0,0,.412-.191L19.332,4.477,14.846,0Z" transform="translate(19.357 37.634)" fill="#f53446"/>
+  <text id="GET_IT_ON" data-name="GET IT ON" transform="translate(55.618 20.945)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI" letter-spacing="-0.017em"><tspan x="0" y="0">GET IT ON</tspan></text>
+  <text id="Google_Play" data-name="Google Play" transform="translate(52.97 47.864)" fill="#fff" font-size="27" font-family="SegoeUI, Segoe UI" letter-spacing="-0.005em"><tspan x="0" y="0">Google Play</tspan></text>
+</svg>

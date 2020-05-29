@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="25" viewBox="0 0 37 25">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdda76"/>
+      <stop offset="0.176" stop-color="#fdd365"/>
+      <stop offset="0.377" stop-color="#f6c34e"/>
+      <stop offset="0.598" stop-color="#dda534"/>
+      <stop offset="0.745" stop-color="#e4ad39"/>
+      <stop offset="0.87" stop-color="#fdcb58"/>
+      <stop offset="1" stop-color="#fdff8f"/>
+    </linearGradient>
+  </defs>
+  <path id="Fill_960" data-name="Fill 960" d="M32.375,25H4.625A4.662,4.662,0,0,1,0,20.312V4.688A4.7,4.7,0,0,1,.479,2.608,4.6,4.6,0,0,1,4.625,0h27.75a4.6,4.6,0,0,1,4.146,2.608A4.7,4.7,0,0,1,37,4.688V20.312A4.662,4.662,0,0,1,32.375,25ZM3.084,5.758V20.312a1.554,1.554,0,0,0,1.541,1.564h27.75a1.554,1.554,0,0,0,1.541-1.564V5.758l-13.2,7.3a4.564,4.564,0,0,1-4.431,0ZM4.762,3.126v0l13,7.185a1.52,1.52,0,0,0,1.476,0l13-7.187Z" fill="url(#linear-gradient)"/>
+</svg>

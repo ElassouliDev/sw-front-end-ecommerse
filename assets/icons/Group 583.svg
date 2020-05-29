@@ -1,0 +1,11 @@
+<svg id="Group_583" data-name="Group 583" xmlns="http://www.w3.org/2000/svg" width="211.879" height="64.888" viewBox="0 0 211.879 64.888">
+  <g id="Basic_Download_Badges_Android_Grey" data-name="Basic/Download Badges/Android/Grey" transform="translate(0 0)">
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="211.879" height="64.888" rx="10"/>
+  </g>
+  <g id="Group" transform="translate(15.175 13.925)">
+    <path id="Shape" d="M28.315,12.1a9.459,9.459,0,0,1,4.51-7.938A9.7,9.7,0,0,0,25.188.034C21.975-.3,18.858,1.955,17.222,1.955c-1.669,0-4.189-1.888-6.906-1.833A10.169,10.169,0,0,0,1.758,5.338c-3.7,6.4-.941,15.81,2.605,20.984,1.774,2.534,3.846,5.364,6.559,5.264,2.654-.109,3.646-1.691,6.848-1.691,3.174,0,4.1,1.691,6.871,1.627,2.849-.046,4.642-2.546,6.354-5.1A20.933,20.933,0,0,0,33.9,20.508,9.146,9.146,0,0,1,28.315,12.1Z" transform="translate(0 10.042)" fill="#fff"/>
+    <path id="Shape-2" data-name="Shape" d="M6.242,6.673A9.306,9.306,0,0,0,8.375,0,9.5,9.5,0,0,0,2.237,3.172,8.856,8.856,0,0,0,.048,9.6,7.844,7.844,0,0,0,6.242,6.673Z" transform="translate(16.847 0)" fill="#fff"/>
+  </g>
+  <text id="Download_on_the" data-name="Download on the" transform="translate(66.212 26.918)" fill="#fff" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0" letter-spacing="0.091em">Download on th</tspan><tspan y="0">e</tspan></text>
+  <text id="App_Store" data-name="App Store" transform="translate(72.171 53.147)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI" letter-spacing="0.023em"><tspan x="0" y="0">App Store</tspan></text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.668" height="34" viewBox="0 0 25.668 34">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdda76"/>
+      <stop offset="0.176" stop-color="#fdd365"/>
+      <stop offset="0.377" stop-color="#f6c34e"/>
+      <stop offset="0.598" stop-color="#dda534"/>
+      <stop offset="0.745" stop-color="#e4ad39"/>
+      <stop offset="0.87" stop-color="#fdcb58"/>
+      <stop offset="1" stop-color="#fdff8f"/>
+    </linearGradient>
+  </defs>
+  <path id="Fill_1100" data-name="Fill 1100" d="M12.834,34a2.713,2.713,0,0,1-1.826-.71,43.949,43.949,0,0,1-6.49-7.472C1.52,21.369,0,17.026,0,12.908a12.834,12.834,0,1,1,25.668,0c0,4.114-1.52,8.458-4.518,12.91a43.967,43.967,0,0,1-6.492,7.472A2.709,2.709,0,0,1,12.834,34Zm0-31.132a10.023,10.023,0,0,0-9.982,10.04c0,3.551,1.355,7.349,4.026,11.288a40.257,40.257,0,0,0,5.956,6.885A40.019,40.019,0,0,0,18.789,24.2c2.671-3.939,4.026-7.737,4.026-11.288A10.023,10.023,0,0,0,12.833,2.868Zm0,15.778a5.737,5.737,0,1,1,5.7-5.738A5.727,5.727,0,0,1,12.833,18.646Zm0-8.605a2.869,2.869,0,1,0,2.853,2.868A2.863,2.863,0,0,0,12.833,10.04Z" fill="url(#linear-gradient)"/>
+</svg>
