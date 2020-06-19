@@ -49,7 +49,6 @@ function handleScroll(e) {
         $('#fixedHeader').removeClass('fixedHeader');
     }
 }
-
 // List Items Pages
 $(function () {
     $('.list-group-item').on('click', function () {
@@ -59,3 +58,7 @@ $(function () {
             .toggleClass('fa-chevron-down');
     });
 });
+
+$('.carousel').carousel({
+    interval: false
+})

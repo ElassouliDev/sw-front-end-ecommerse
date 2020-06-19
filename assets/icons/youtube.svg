@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.063" height="28.076" viewBox="0 0 39.063 28.076">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M19.531,28.076h0c-.1,0-10.2-.1-13.282-.4-.149-.029-.327-.051-.533-.076a5.7,5.7,0,0,1-3.773-1.631C.785,24.771.395,22.033.391,22.005A62.081,62.081,0,0,1,0,15.545V12.518A62.278,62.278,0,0,1,.391,6.056c0-.028.4-2.766,1.551-3.962A5.326,5.326,0,0,1,5.608.431C5.7.422,5.783.413,5.858.4,11.26,0,19.44,0,19.522,0h.018C19.622,0,27.8,0,33.2.4c.075.009.159.017.25.026a5.319,5.319,0,0,1,3.663,1.663c1.157,1.2,1.55,3.934,1.553,3.962a62.156,62.156,0,0,1,.391,6.462v3.028a62.2,62.2,0,0,1-.391,6.46c0,.028-.4,2.767-1.553,3.962a5.326,5.326,0,0,1-3.666,1.666c-.091.009-.174.017-.248.026C27.785,28.06,19.613,28.076,19.531,28.076ZM15.5,8V19.215L26.05,13.627Z" transform="translate(0 0)" fill="#f61c1c"/>
+    </clipPath>
+  </defs>
+  <g id="Group_954" data-name="Group 954" transform="translate(-346 -1508)">
+    <ellipse id="Ellipse_256" data-name="Ellipse 256" cx="13.5" cy="10.5" rx="13.5" ry="10.5" transform="translate(351 1511)" fill="#fff"/>
+    <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(346 1508)" clip-path="url(#clip-path)">
+      <g id="Color" transform="translate(-2.045 -7.719)">
+        <rect id="color_main" data-name="color/main" width="42.953" height="42.953" rx="4" fill="#f61c1c"/>
+      </g>
+    </g>
+  </g>
+</svg>
