@@ -107,7 +107,7 @@ jQuery(document).ready(function () {
         handleScroll();
         sliderProducts();
         loadingBtn();
-        lightSlider();
+        // lightSlider();
         loading();
     })(jQuery);
 
