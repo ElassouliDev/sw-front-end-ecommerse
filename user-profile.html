@@ -11,6 +11,57 @@
     <link rel="stylesheet" href="assets/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light1", // "light1", "light2", "dark1", "dark2"
+                axisY: {
+                    // title: "Reserves(MMbbl)"
+                },
+                data: [{
+                    type: "column",
+                    showInLegend: true,
+                    // type: "spline",
+                    xValueFormatString: "Year ####",
+                    yValueFormatString: "#",
+                    // legendMarkerColor: "grey",
+                    dataPointWidth: 10,
+                    // zoomEnabled: true,
+                    legendText: "MMbbl = one million barrels",
+                    color: '#FDDA76',
+                    axisY: {
+                        // valueFormatString: "#%", // move comma to change formatting
+                        // prefix: "%"
+                    },
+                    dataPoints: [{
+                            y: 4,
+                            label: "2019"
+                        },
+                        {
+                            y: 2,
+                            label: "2020"
+                        },
+                        {
+                            y: 9,
+                            label: "Canada"
+                        },
+                        {
+                            y: 3.4,
+                            label: "2021"
+                        },
+                        {
+                            y: 6.7,
+                            label: "2022"
+                        },
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
 </head>
 
 <body>
@@ -55,6 +106,8 @@
                             <input type="text" class="form-control" aria-label="Text input with dropdown button"
                                 placeholder="Search">
                             <div class="icons">
+                                <!-- <i class="fas fa-camera"></i> |
+                                <i class="fas fa-search"></i> -->
                                 <img src="assets/icons/photo-camera.png" alt=""> |
                                 <img src="assets/icons/Search.png" alt="">
                             </div>
@@ -137,183 +190,81 @@
     </header>
     <!-- End Header -->
 
-    <section id="header_page" class="information">
+    <section id="header_page" class="user-profile">
         <div class="wrapper">
-            <div class="rowFlex">
-                <div class="list-group list-group-root">
-                    <a href="profile.html" class="list-group-item">
-                        Profile
-                    </a>
-                    <a href="addresses.html" class="list-group-item">
-                        Addresses
-                    </a>
-                    <a href="payment-methods.html" class="list-group-item">
-                        Payment Methods
-                    </a>
-                    <a href="manage-credit-cards.html" class="list-group-item">
-                        Manage Credit Cards
-                    </a>
-                    <a href="orders.html" class="list-group-item">
-                        Orders
-                    </a>
-                    <a href="favorite.html" class="list-group-item active">
-                        Favorite
-                    </a>
-                    <a href="most-bought.html" class="list-group-item">
-                        Most Bought
-                    </a>
-                    <a href="points.html" class="list-group-item">
-                        Points
-                    </a>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card-user">
+                        <div class="head-img">
+                            <img class="img-fluid" src="assets/images/3.png" alt="">
+                        </div>
+                        <div class="img-user">
+                            <img class="img-fluid" src="assets/images/users/User 05c.png" alt="">
+                        </div>
+                        <div class="head-user text-center mt-3">
+                            <h3>Abdallah Y K Tannira</h3>
+                            <p class="mt-3">This is your account dashboard which enables</p>
+                        </div>
+                        <div class="user-id text-center">
+                            id <span>547850</span>
+                        </div>
+                        <div class="count-points">
+                            <span class="title">Number of points</span>
+                            <div class="point">50000</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="">
-                    <div class="title-page">
-                        Favorite
+                <div class="col-md-7">
+                    <div class="your-points">
+                        <h3>Your Points</h3>
+                        <p>This is your account dashboard which enables you to view your account activities.</p>
+                        <!-- <canvas id="myChart" width="400vw" height="400vh"></canvas> -->
+                        <div id="chartContainer" style="height: 400px; width: 100%;"></div>
                     </div>
                 </div>
             </div>
-            <div id="allCartItems" class="paddingTopPragraph">
-                <div class="row">
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/m-and-ms.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/11220378-3x2-xlarge.jpg" alt="">
-                                <div class="discount">-50%</div>
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $ <span><del>22.00 $</del></span></h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/cookies-4053771_1920.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/GettyImages-674582668-851b85b.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid"
-                                    src="assets/images/SmartSweets-primps-the-gummy-category-for-future-with-kick-sugar-ethos_wrbm_large.jpg"
-                                    alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/m-and-ms.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/cookies-4053771_1920.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/m-and-ms.jpg" alt="">
-                                <div class="discount">-30%</div>
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $ <span><del>22.00 $</del></span></h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/11220378-3x2-xlarge.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="btns-information row">
+                <div class="col-md-3 col-xs-12">
+                    <a href="profile.html">Profile</a>
                 </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="addresses.html">Addresses</a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="payment-methods.html">Payment Methods</a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="manage-credit-cards.html">Manage Credit Cards</a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="orders.html">Orders</a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="favorite.html">Favorite</a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="most-bought.html">Most Bought</a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="points.html">Points</a>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+
+            <div class="newsletter-settings">
+                <h3>Your Newsletter Settings</h3>
+                <hr>
+                <form action="">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">
+                            Yes, I would like to subscribe to the free Mozzaik newsletter. You have the possibility to
+                            unsubscribe at any time.
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -484,15 +435,48 @@
         </div>
     </footer>
     <!-- End Footer -->
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js">
     </script>
-    <script src="assets/js/bootstrap.min.js">
-    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
     <script src="assets/js/script.js"></script>
+    <!-- <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [70, 90, 55, 23, 88, 10, 0, 100],
+                    backgroundColor: [
+                        '#FDDA76', '#FDD365', '#F6C34E', '#DDA534', '#E4AD39', '#FDCB58', '#FDFF8F'
+                    ],
+                    barPercentage: 0.9,
+                    barThickness: 20,
+                    maxBarThickness: 20,
+                    minBarLength: 2,
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script> -->
+
+
 </body>
 
 </html>

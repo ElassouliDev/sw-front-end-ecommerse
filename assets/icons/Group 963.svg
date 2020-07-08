@@ -1,0 +1,12 @@
+<svg id="Group_963" data-name="Group 963" xmlns="http://www.w3.org/2000/svg" width="167.503" height="42.31" viewBox="0 0 167.503 42.31">
+  <text id="mastercard" transform="translate(72.503 26.999)" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">mastercard</tspan></text>
+  <g id="mastercard-2" data-name="mastercard" transform="translate(0 0)">
+    <g id="Group" transform="translate(0 0)" opacity="0">
+      <rect id="Rectangle" width="62.656" height="42.31" fill="#fff"/>
+    </g>
+    <rect id="Rectangle-2" data-name="Rectangle" width="16.526" height="27.568" transform="translate(23.065 7.371)" fill="#f26122"/>
+    <path id="Path" d="M21.315,17.536A17.627,17.627,0,0,1,27.789,3.752,16.919,16.919,0,0,0,4.558,5.638a17.808,17.808,0,0,0,0,23.8A16.919,16.919,0,0,0,27.789,31.32,17.627,17.627,0,0,1,21.315,17.536Z" transform="translate(3.531 3.619)" fill="#ea1d25"/>
+    <path id="Shape" d="M.81.68h0L.7.678V0H.858l.21.479L1.263,0h.162V.677l-.114,0V.165L1.133.611H1L.81.165V.68Zm-.487,0h-.1V.116H0V0H.567V.116H.323V.678Z" transform="translate(57.12 31.336)" fill="#f69e1e"/>
+    <path id="Path-2" data-name="Path" d="M27.775,17.525a17.572,17.572,0,0,1-9.666,15.76A16.884,16.884,0,0,1,0,31.308,17.786,17.786,0,0,0,2.881,6.7,17.019,17.019,0,0,0,0,3.741,16.884,16.884,0,0,1,18.109,1.764a17.572,17.572,0,0,1,9.666,15.76Z" transform="translate(31.32 3.631)" fill="#f69e1e"/>
+  </g>
+</svg>

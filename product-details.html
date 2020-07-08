@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/lightSlider/css/lightslider.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -136,180 +137,77 @@
         </div>
     </header>
     <!-- End Header -->
-
-    <section id="header_page" class="information">
+    <!-- Start Section Product Details -->
+    <section class="section_product_details">
         <div class="wrapper">
-            <div class="rowFlex">
-                <div class="list-group list-group-root">
-                    <a href="profile.html" class="list-group-item">
-                        Profile
-                    </a>
-                    <a href="addresses.html" class="list-group-item">
-                        Addresses
-                    </a>
-                    <a href="payment-methods.html" class="list-group-item">
-                        Payment Methods
-                    </a>
-                    <a href="manage-credit-cards.html" class="list-group-item">
-                        Manage Credit Cards
-                    </a>
-                    <a href="orders.html" class="list-group-item">
-                        Orders
-                    </a>
-                    <a href="favorite.html" class="list-group-item active">
-                        Favorite
-                    </a>
-                    <a href="most-bought.html" class="list-group-item">
-                        Most Bought
-                    </a>
-                    <a href="points.html" class="list-group-item">
-                        Points
-                    </a>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul id="product_details_gallery">
+                        <li data-thumb="assets/images/122222/HO022O00M-Q11@4.png">
+                            <img src="assets/images/122222/HO022O00M-Q11@4.png" />
+                        </li>
+                        <li data-thumb="assets/images/122222/HO022O00M-Q11@5.png">
+                            <img src="assets/images/122222/HO022O00M-Q11@5.png" />
+                        </li>
+                        <li data-thumb="assets/images/122222/HO022O00M-Q11@6.png">
+                            <img src="assets/images/122222/HO022O00M-Q11@6.png" />
+                        </li>
+                        <li data-thumb="assets/images/122222/HO022O00M-Q11@7.png">
+                            <img src="assets/images/122222/HO022O00M-Q11@7.png" />
+                        </li>
+                    </ul>
                 </div>
-                <div class="">
-                    <div class="title-page">
-                        Favorite
-                    </div>
-                </div>
-            </div>
-            <div id="allCartItems" class="paddingTopPragraph">
-                <div class="row">
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/m-and-ms.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
+                <div class="col-md-6">
+                    <div class="product_details_content">
+                        <div class="title">DIXON JACKET - Skinnjacka</div>
+                        <div class="price">
+                            <span>5 995,00</span> <small>kr Inkl. moms</small>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/11220378-3x2-xlarge.jpg" alt="">
-                                <div class="discount">-50%</div>
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $ <span><del>22.00 $</del></span></h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
+                        <div class="rating"> (4.0)</div>
+                        <div class="frag"><span>Farg: </span> 450g</div>
+                        <ul class="product_pic">
+                            <li>
+                                <img src="assets/images/122222/HO022O00M-A11@2.png" class="img-fluid" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/images/122222/HO022O00M-K11@10.png4.webp" class="img-fluid" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/images/122222/HO022O00M-Q11@7.png" class="img-fluid" alt="">
+                            </li>
+                            <li>
+                                <img src="assets/images/122222/gffg.png" class="img-fluid" alt="">
+                            </li>
+                        </ul>
+                        <div class="product_details_id">
+                            <span>ID </span> bf0001533
                         </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/cookies-4053771_1920.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
+                        <select name="" id="" class="product_details_frag">
+                            <option value="">Farg: 450g</option>
+                            <option value="">Farg: 340g</option>
+                            <option value="">Farg: 250g</option>
+                        </select>
+                        <div class="product_details_buy">
+                            <img src="assets/icons/new-product.png" class="img-fluid" alt="">
+                            <span>Buy the product and get 200 gift points</span>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/GettyImages-674582668-851b85b.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
+                        <div class="product_details_actions">
+                            <button class="category">
+                                Handla
+                                <i class="fas fa-shopping-bag fa-2x"></i>
+                            </button>
+                            <button class="likeit">
+                                <i class="far fa-heart fa-2x"></i>
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid"
-                                    src="assets/images/SmartSweets-primps-the-gummy-category-for-future-with-kick-sugar-ethos_wrbm_large.jpg"
-                                    alt="">
+                        <div class="product_details_transfer">
+                            <div class="transfer">
+                                <i class="fa fa-truck"></i>
+                                <span>StandardleveransGratis</span>
                             </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/m-and-ms.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/cookies-4053771_1920.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/m-and-ms.jpg" alt="">
-                                <div class="discount">-30%</div>
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $ <span><del>22.00 $</del></span></h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <div class="swiper-slide">
-                            <span class="like">
-                                <i class="fa fa-times"></i>
-                            </span>
-                            <div class="img">
-                                <img class="img-fluid" src="assets/images/11220378-3x2-xlarge.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h5>22.00 $</h5>
-                                <p>BUCKET HAT - HAT - green aop</p>
-                                <p>Wood Wood</p>
+                            <div class="transfer">
+                                <i class="fa fa-truck"></i>
+                                <span>StandardleveransGratis</span>
                             </div>
                         </div>
                     </div>
@@ -317,7 +215,56 @@
             </div>
         </div>
     </section>
+    <!-- End Section Product Details -->
+    <!-- Section Product Desc -->
+    <section class="section_product_desc">
+        <div class="wrapper">
+            <div class="rowFlex">
+                <div class="product_desc_nav">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-description-tab" data-toggle="pill"
+                                href="#pills-description" role="tab" aria-controls="pills-description"
+                                aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-fit-etc-tab" data-toggle="pill" href="#pills-fit-etc"
+                                role="tab" aria-controls="pills-fit-etc" aria-selected="false">Fit Etc.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-shipping"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Shipping</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-reviews-tab" data-toggle="pill" href="#pills-reviews"
+                                role="tab" aria-controls="pills-reviews" aria-selected="false">Reviews (2)</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-description" role="tabpanel"
+                            aria-labelledby="pills-description-tab">...</div>
+                        <div class="tab-pane fade" id="pills-fit-etc" role="tabpanel"
+                            aria-labelledby="pills-fit-etc-tab">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-reviews" role="tabpanel"
+                            aria-labelledby="pills-reviews-tab">...
+                        </div>
+                    </div>
+                </div>
 
+
+                <div class="product_desc_img">
+                    <img src="assets/images/122222/HO022O00M-Q11@6.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End Section Product Desc -->
     <!-- Start Footer -->
     <footer>
         <div class="wrapper">
@@ -492,6 +439,7 @@
     <script src="assets/js/bootstrap.min.js">
     </script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/plugins/lightSlider/js/lightslider.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
