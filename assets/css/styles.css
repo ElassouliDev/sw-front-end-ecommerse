@@ -241,6 +241,8 @@ body {
     margin: 0;
     font-family: 'open_san';
     font-size: 10px;
+    overflow-x: hidden;
+
 }
 
 /* Wrapper Container Start */
@@ -468,6 +470,7 @@ header .custom-search button.btn.btn-outline-secondary.dropdown-toggle {
     margin-right: .5rem;
     width: 22.7px;
     height: 20.82px;
+    object-fit: contain;
 }
 
 .nav-item .nav-link img.small-icon {
@@ -856,8 +859,9 @@ footer .footerPayment .img {
     border-radius: 10px;
     background: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 footer .footerPayment .img img {
@@ -1023,6 +1027,7 @@ footer .bottom-footer {
 
 #header_page .list-group.list-group-root.well {
     padding: 11.5px 8px !important;
+    margin-right: 15px;
 }
 
 #header_page .list-group.list-group-root .list-group-item {
@@ -1130,6 +1135,10 @@ footer .bottom-footer {
     font-size: 2.4rem;
     font-weight: bolder;
     border-radius: 15px;
+}
+
+#header_page .page .title-page {
+    width: 100%;
 }
 
 #header_page .list-images {
@@ -1265,13 +1274,13 @@ footer .bottom-footer {
 }
 
 #header_page .rule .carousel-indicators {
-    height: 110px;
+    height: auto;
     position: initial;
 }
 
 #header_page .rule .carousel-indicators li {
     width: 176px;
-    height: 100%;
+    height: 110px;
     padding: 5px !important;
     position: relative;
 }
@@ -1287,11 +1296,18 @@ footer .bottom-footer {
 }
 
 #header_page .rule .carousel-indicators .icon-youtube {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 25%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_page .rule .carousel-indicators .icon-youtube img {
     width: 50px;
-    transform: translate(50%, -50%);
 }
 
 #header_page .rule>p {
@@ -1570,12 +1586,12 @@ footer .bottom-footer {
 
 /* Cart Page Css Start */
 #allCartItems .swiper-slide {
-    width: 254px !important;
+    width: 100% !important;
     padding-bottom: 50px;
 }
 
 #allCartItems .swiper-slide .img {
-    width: 254px;
+    width: 100%;
     height: 403px;
 }
 

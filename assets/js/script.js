@@ -2,32 +2,34 @@
 
 function sliderProducts() {
     var swiperMat = new Swiper('.swiper-container', {
-        slidesPerView: 9,
-        centeredSlides: true,
+        slidesPerView: 1,
         spaceBetween: 10,
-        freeMode: true,
-        loop: false,
-        setWrapperSize: true,
-        initialSlide: 3,
+        centeredSlides: true,
         grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
         breakpoints: {
             640: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+                slidesPerView: 2,
+                spaceBetween: 20,
             },
             1024: {
-                slidesPerView: 9,
+                slidesPerView: 6,
                 spaceBetween: 10,
             },
         }
+
+
     });
 
 }
@@ -41,20 +43,34 @@ function loading() {
 function handleScroll(e) {
     $(document).scroll(function () {
         var offset = $(this).scrollTop();
-        // if (offset > 100) {
-        //     $('#fixedHeader').animate({
-        //         position: 'fixed',
-        //         top: '0',
-        //         width: '100%',
-        //         'z-index': 9999
-        //     }).fadeIn('show');
-        // } else {
-        //     $('#fixedHeader').animate({
-        //         position: 'relative',
-        //         top: 'unset',
-        //         transition: 'position 1s linear'
-        //     }).fadeOut('slow')
-        // }
+        if (offset > 100) {
+            $('#fixedHeader').css({
+                position: 'fixed',
+                top: '0',
+                width: '100%',
+                'z-index': 1001,
+                'trasition': '.5s linear'
+            });
+        } else {
+            $('#fixedHeader').css({
+                position: 'relative',
+                top: 'unset',
+                transition: '1s linear'
+            });
+        }
+    })
+}
+
+function open_nav() {
+    $('.open_nav_list').click(function () {
+        $('.listNav').addClass('open');
+    })
+    $('.close-nav').click(function () {
+        $('.listNav').removeClass('open');
+    })
+
+    $('.open_nav_settings').click(function () {
+        $('header .navbar-collapse').toggleClass('open');
     })
 }
 // List Items Pages
@@ -107,8 +123,8 @@ jQuery(document).ready(function () {
         handleScroll();
         sliderProducts();
         loadingBtn();
-        // lightSlider();
         loading();
+        open_nav();
     })(jQuery);
 
 });

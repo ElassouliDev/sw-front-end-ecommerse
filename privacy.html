@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>SMARTKOP</title>
-        <link rel="icon" href="assets/icons/Point.svg">
-        <link rel="stylesheet" href="assets/css/swiper.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/all.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/styles.css">
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SMARTKOP</title>
+    <link rel="icon" href="assets/icons/Point.svg">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
 <body>
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -29,7 +32,6 @@
     <!-- End Top Navbar -->
 
     <!-- Start Header -->
-    <!-- Start Header -->
     <header id="fixedHeader" class="">
         <div class="wrapper">
             <div class="header">
@@ -37,6 +39,13 @@
                     <a class="navbar-brand" href="index.html">
                         <img src="assets/Group 904.svg" alt="">
                     </a>
+                    <span class="open_nav_list d-none">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <span class="open_nav_settings d-none">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </span>
+
                     <div class="navbar-collapse">
                         <div class="input-group mx-auto my-lg-0 custom-search">
                             <div class="input-group-prepend">
@@ -54,10 +63,8 @@
                             <input type="text" class="form-control" aria-label="Text input with dropdown button"
                                 placeholder="Search">
                             <div class="icons">
-                                <!-- <i class="fas fa-camera"></i> |
-                                <i class="fas fa-search"></i> -->
-                                <img src="assets/icons/photo-camera.png" alt=""> |
-                                <img src="assets/icons/Search.png" alt="">
+                                <img class="camera" src="assets/icons/photo-camera.png" alt=""> |
+                                <img class="search" src="assets/icons/Search.png" alt="">
                             </div>
                         </div>
                         <ul class="navbar-nav ml-auto">
@@ -84,6 +91,9 @@
                     </div>
                 </nav>
                 <ul class="listNav">
+                    <div class="close-nav d-none">
+                        <i class="fa fa-times"></i>
+                    </div>
                     <li class="nav-item">
                         <a class="nav-link" href="smart-handla.html">
                             Smart Handla
@@ -116,7 +126,8 @@
                     </li>
                     <li class="nav-item ml-auto selection">
                         <select name="" id="">
-                            <option value="en"><div class="fa fa-globe-africa"></div> | En
+                            <option value="en">
+                                <div class="fa fa-globe-africa"></div>$ | En
                             </option>
                             <option value="en">$ | En</option>
                             <option value="en">$ | En</option>
@@ -166,76 +177,127 @@
                         Help / Support
                     </a>
                 </div>
-                <div class="">
+                <div class="content-page">
                     <div class="title-page">
                         Privacy Policy
                     </div>
                 </div>
             </div>
             <p class="lead mt-5 paragraph paddingTopPragraph">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi
+                quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe
+                asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum
+                quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio
+                accusamus, illo blanditiis repellendus?
             </p>
 
             <div class="rule my-5">
                 <h3>01 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
             </div>
             <div class="rule my-5">
                 <h3>02 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
             </div>
             <div class="rule my-5">
                 <h3>03 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
-    
+
             </div>
             <div class="rule my-5">
                 <h3>04 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
-    
+
             </div>
             <div class="rule my-5">
                 <h3>05 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
-    
+
             </div>
             <div class="rule my-5">
                 <h3>06 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
-    
+
             </div>
             <div class="rule my-5">
                 <h3>07 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
-    
+
             </div>
             <div class="rule my-5">
                 <h3>08 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat in optio accusamus, illo blanditiis repellendus?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur quas deleniti tempora
+                    nisi quae magnam. Facilis neque necessitatibus quae doloremque repellat officia quis, ex maiores
+                    saepe asperiores, omnis consequatur? Vel esse dolorum sunt sequi odio asperiores nemo. Magni iusto
+                    necessitatibus tempora perspiciatis culpa velit facere inventore aut accusamus. Repellat quam
+                    dolorum quaerat officiis eaque officia, modi doloremque tempora, odio maiores aperiam? Sunt quaerat
+                    in optio accusamus, illo blanditiis repellendus?
                 </p>
-    
+
             </div>
             <div class="rule my-5">
                 <h3>09 &nbsp;&nbsp; Company Staff</h3>
                 <p class="lead paragraph mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea nemo dolores veritatis facere optio laudantium voluptatem dolore, ducimus, aspernatur impedit perspiciatis cupiditate facilis esse? Voluptatum, unde quam quo dolor iusto maiores commodi ut magni nulla neque! Consequuntur natus odit minus vel omnis cumque, inventore fugiat amet assumenda facere at culpa impedit adipisci, laborum esse odio explicabo facilis? Magnam quod autem natus fugit doloremque explicabo debitis. Asperiores expedita id sunt, deserunt, quibusdam ut quaerat ullam ea, sapiente veniam accusamus dolores culpa provident. Praesentium nobis in doloribus quas fugit. Adipisci, animi quaerat.   
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea nemo dolores veritatis facere optio
+                    laudantium voluptatem dolore, ducimus, aspernatur impedit perspiciatis cupiditate facilis esse?
+                    Voluptatum, unde quam quo dolor iusto maiores commodi ut magni nulla neque! Consequuntur natus odit
+                    minus vel omnis cumque, inventore fugiat amet assumenda facere at culpa impedit adipisci, laborum
+                    esse odio explicabo facilis? Magnam quod autem natus fugit doloremque explicabo debitis. Asperiores
+                    expedita id sunt, deserunt, quibusdam ut quaerat ullam ea, sapiente veniam accusamus dolores culpa
+                    provident. Praesentium nobis in doloribus quas fugit. Adipisci, animi quaerat.
                 </p>
-    
+
             </div>
         </div>
     </section>
@@ -301,10 +363,11 @@
                         <li>
                             <h6>Newsletter</h6>
                         </li>
-                        <li> 
+                        <li>
                             <p>
-                                Subscribe to the free newsletter and ensure that you will no longer miss any offers or news
-                            of smartkop.
+                                Subscribe to the free newsletter and ensure that you will no longer miss any offers or
+                                news
+                                of smartkop.
                             </p>
                         </li>
                         <li>
@@ -315,8 +378,9 @@
                                 </div>
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="checkbox">
-                                    <label class="form-check-label" for="checkbox"> I Have Read The Data Protection Information</label>
-                                    </div>
+                                    <label class="form-check-label" for="checkbox"> I Have Read The Data Protection
+                                        Information</label>
+                                </div>
                             </form>
                         </li>
                     </ul>
@@ -409,9 +473,9 @@
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js">
-        </script>
+    </script>
     <script src="assets/js/bootstrap.min.js">
-        </script>
+    </script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
