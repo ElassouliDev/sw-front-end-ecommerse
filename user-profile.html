@@ -17,39 +17,40 @@
 
             var chart = new CanvasJS.Chart("chartContainer", {
                 animationEnabled: true,
-                theme: "light1", // "light1", "light2", "dark1", "dark2"
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
                 axisY: {
-                    // title: "Reserves(MMbbl)"
+                    valueFormatString: " #'%' ",
+                    tickLength: 0
                 },
                 data: [{
                     type: "column",
                     showInLegend: true,
                     // type: "spline",
-                    xValueFormatString: "Year ####",
-                    yValueFormatString: "#",
+                    xValueFormatString: "",
+                    yValueFormatString: "#'%'",
                     // legendMarkerColor: "grey",
-                    dataPointWidth: 10,
+                    dataPointWidth: 3,
                     // zoomEnabled: true,
-                    legendText: "MMbbl = one million barrels",
+                    // legendText: "MMbbl = one million barrels",
                     color: '#FDDA76',
                     axisY: {
-                        // valueFormatString: "#%", // move comma to change formatting
-                        // prefix: "%"
+                        valueFormatString: "#'%'", // move comma to change formatting
+                        prefix: "#'%'"
                     },
                     dataPoints: [{
-                            y: 4,
+                            y: 24,
                             label: "2019"
                         },
                         {
-                            y: 2,
+                            y: 20,
                             label: "2020"
                         },
                         {
-                            y: 9,
+                            y: 90,
                             label: "Canada"
                         },
                         {
-                            y: 3.4,
+                            y: 3,
                             label: "2021"
                         },
                         {

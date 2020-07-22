@@ -926,28 +926,25 @@ footer .bottom-footer {
     background-color: rgba(75, 22, 15, 0.4);
 }
 
-#coming_soon::after {
-    content: '';
-    position: absolute;
-    left: 14%;
-    top: 19%;
-    width: 66.939%;
-    height: 348px;
-    background-image: url(../images/coming-soon.png);
-    background-size: cover;
-    background-position: 100%;
+#coming_soon img {
+    max-width: 885.37px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    height: 480px;
+    max-height: 480.03px;
+    position: relative;
 }
 
 #coming_soon .content,
 #page_404 .content {
     padding: 20px;
-    padding-top: 2.8rem;
     text-align: center;
     width: 47vw;
     height: 260px;
-    position: absolute;
-    bottom: 8rem;
-    left: 25%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
 
 }
 
@@ -983,24 +980,20 @@ footer .bottom-footer {
 }
 
 #page_404 {
-    position: relative;
-    height: 998px;
-    background-size: cover;
-    background-position: 100% 58%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 
-#page_404::after {
-    content: '';
-    position: absolute;
-    top: 6%;
-    left: 15%;
-    right: 15%;
-    width: 885.37px;
-    height: 480.03px;
-    background-image: url(../icons/404.svg);
-    background-size: cover;
-    background-position: center;
+#page_404 img {
+    max-width: 885.37px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    height: 480px;
+    max-height: 480.03px;
 }
 
 #page_404 .content h1,
@@ -1518,14 +1511,14 @@ footer .bottom-footer {
 #pills-tab>li .nav-link:hover {
     border-radius: .25rem;
     height: 100%;
-    padding: 12px 0;
+    padding: 12px 0 !important;
     font-size: 15px;
     background: #FAFAFA !important;
     color: var(--secondary-color);
 }
 
 #pills-tab>li .nav-link.active {
-    background: var(--basic-bg);
+    background: var(--basic-bg) !important;
     color: #fff;
 }
 
@@ -2548,6 +2541,28 @@ label.form-check-label {
     padding-bottom: 50px;
 }
 
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rate {
+    margin-right: 2px;
+    font-size: 20px;
+}
+
+.rate i {
+    width: 20px;
+    height: 19px;
+    margin-right: 6px;
+}
+
+.rating .value {
+    font-size: 11px;
+    font-family: 'open_san_semibold';
+}
+
 .lSSlideOuter.vertical .lSGallery {
     height: auto !important;
     border: none;
@@ -2761,7 +2776,7 @@ label.form-check-label {
     background-color: #fafafa;
     width: 50%;
     height: 521px;
-    padding: 29px 41px;
+    padding: 33px 21px;
 }
 
 .section_product_desc .product_desc_nav ul li a {
@@ -2798,7 +2813,8 @@ label.form-check-label {
 .section_product_desc .tab-pane .available-day {
     position: relative;
     font-size: 18px;
-    padding-left: 33px;
+    margin-left: 33px;
+    padding-left: 30px;
 }
 
 .section_product_desc .tab-pane .available-day::before {
@@ -2821,6 +2837,65 @@ label.form-check-label {
 .section_product_desc .product_desc_img img {
     height: 100%;
     object-fit: cover;
+}
+
+.section_product_desc .rate-value {
+    font-size: 60px;
+    font-family: 'open_san_bold';
+}
+
+.section_product_desc .rate-total {
+    font-family: 'open_san_semibold';
+    font-size: 11px;
+    margin-top: 9px;
+}
+
+.progress {
+    height: 6.23px;
+    width: 173.67px;
+    border-radius: 0;
+}
+
+.progress-bar {
+    background: var(--basic-bg);
+    border-radius: 1px;
+
+}
+
+.section_product_desc .rate_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section_product_desc .card_rate__2 {
+    margin-top: 45px;
+}
+
+.section_product_desc .card_rate {
+    margin-top: 36px;
+}
+
+.section_product_desc .rate_item .rate_item__1 {
+    font-size: 13px;
+    font-family: 'open_san_semibold';
+    margin: 0 8px;
+}
+
+.section_product_desc .rate-total span {
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+.section_product_desc .btn-form {
+    width: 139px;
+    height: 45px;
+    margin: 15px auto !important;
+}
+
+.section_product_desc .__p {
+    font-size: 15px;
 }
 
 .product_desc_nav ul {

@@ -38,6 +38,15 @@
         padding: 0 27px 0 0 !important;
     }
 
+    .swiper-slide,
+    .swiper-slide .img {
+        width: 100% !important;
+    }
+
+    .numberOfOrders span {
+        padding-left: 20px;
+    }
+
     #header_page .filter .form-row {
         justify-content: flex-start;
     }
@@ -58,11 +67,106 @@
     #header_page .title-page {
         width: 100%;
     }
+
+    .section_shopping_cart .all-orders .order .order-img {
+        height: 90.37px;
+        width: 90.71px;
+    }
+
+    .product_details_transfer .transfer {
+        width: auto;
+        margin-right: 4px;
+    }
+
+    .product_details_transfer .transfer i {
+        margin-right: 10px;
+    }
+
 }
 
+/* @media screen and (max-width: 940px) {} */
+
 @media screen and (max-width: 767px) {
+
+    .section_product_desc .product_desc_nav,
+    .section_product_desc .product_desc_img {
+        width: 100%;
+    }
+
+    #header_page .filter .form-row {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header_page .page .filter .form-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .swiper-slide {
+        margin-bottom: 20px !important;
+        height: auto;
+    }
+
+    .paddingTopPragraph .col-md-4 {
+        order: 1;
+        margin-bottom: 15px;
+    }
+
+    .paddingTopPragraph .col-md-8 {
+        order: 2;
+    }
+
+    .section_product_desc .product_desc_nav {
+        order: 2;
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .section_product_desc .product_desc_img {
+        order: 1;
+    }
+
     .rowFlex {
         flex-direction: column;
+    }
+
+    .card-order .all-orders .order {
+        padding-left: 0px;
+    }
+
+    .section_shopping_cart .all-orders .order .order-img {
+        height: 350px;
+        width: 100%;
+    }
+
+    .card-order .all-orders .order .order-img img {
+        object-fit: unset;
+        object-position: unset;
+    }
+
+    #coming_soon {
+        height: 100vh;
+        max-height: inherit !important;
+    }
+
+    #coming_soon .content {
+        height: auto;
+    }
+
+    #page_404 img {
+        margin-top: 30px;
+        height: 255px;
+    }
+
+    #coming_soon img {
+        height: 255px;
+    }
+
+    #coming_soon .content,
+    #page_404 .content {
+        width: 100%;
     }
 
     .card-address {
@@ -255,6 +359,19 @@
 
 }
 
+@media screen and (max-width: 645px) {
+    .stepper-checkout ul.nav-tabs li a .round-tab {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .stepper-checkout ul.nav-tabs li a .spacer {
+        width: 40px;
+    }
+}
+
 @media screen and (max-width: 520px) {
     .signup_content .card {
         padding: 40px 18px;
@@ -297,6 +414,29 @@
     }
 }
 
+@media screen and (max-width: 448px) {
+    .stepper-checkout ul {
+        justify-content: center !important;
+        align-items: flex-start !important;
+    }
+
+    .stepper-checkout ul.nav-tabs li a .spacer {
+        width: 0;
+    }
+
+    #coming_soon img {
+        height: 125px;
+    }
+
+    .stepper-checkout ul.nav-tabs li a {
+        padding-right: 10px !important;
+    }
+
+    .stepper-checkout .tab-content .card-form {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 430px) {
     footer .social>i {
         background-color: #fff;
@@ -316,9 +456,51 @@
         left: 35%;
     }
 
+    .confirm-purchase-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .stepper-checkout ul.nav-tabs li a {
+        padding-right: 0px !important;
+        font-size: 12px;
+    }
+
+    .stepper-checkout ul li {
+        display: initial;
+        width: 50%;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 324px) {
+
+
+    #coming_soon img {
+        height: 125px;
+    }
+
+    #page_404 img {
+        margin-top: 50px;
+    }
+
+    #coming_soon .content,
+    #page_404 .content {
+        padding: 20px 0;
+    }
+
+    #page_404 .content h1 {
+        font-size: 20px;
+
+    }
+
+    #coming_soon .content a,
+    #coming_soon .content a:hover,
+    #page_404 .content a,
+    #page_404 .content a:hover {
+        padding: 10px 12px !important;
+        font-size: 14px;
+    }
+
     .card-info .info-img {
         left: 30%;
     }

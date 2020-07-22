@@ -174,7 +174,10 @@
                         <div class="price">
                             <span>5 995,00</span> <small>kr Inkl. moms</small>
                         </div>
-                        <div class="rating"> (4.0)</div>
+                        <div class="rating">
+                            <div id="rate_product" class="rate"></div>
+                            (<span class="value"></span>)
+                        </div>
                         <div class="frag"><span>Farg: </span> 450g</div>
                         <ul class="product_pic">
                             <li>
@@ -232,7 +235,7 @@
         <div class="wrapper">
             <div class="rowFlex">
                 <div class="product_desc_nav">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="pills-description-tab" data-toggle="pill"
                                 href="#pills-description" role="tab" aria-controls="pills-description"
@@ -254,12 +257,12 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-description" role="tabpanel"
                             aria-labelledby="pills-description-tab">
-                            <div class="content-tab mt-5">
+                            <div class="content-tab mt-5 pl-3">
                                 <h4>MATERIALS & CARE</h4>
                                 <p><b>Material : </b> <small>100% leather</small></p>
                                 <p><b>Lining : </b> <small>100% viscose</small></p>
                             </div>
-                            <div class="content-tab mt-5">
+                            <div class="content-tab mt-5 pl-3">
                                 <h4>MATERIALS & CARE</h4>
                                 <p><b>Material : </b> <small>100% leather</small></p>
                                 <p><b>Lining : </b> <small>100% viscose</small></p>
@@ -267,7 +270,7 @@
                         </div>
                         <div class="tab-pane fade" id="pills-fit-etc" role="tabpanel"
                             aria-labelledby="pills-fit-etc-tab">
-                            <div class="content-tab mt-5">
+                            <div class="content-tab mt-5 pl-3">
                                 <h4>MATERIALS & CARE</h4>
                                 <p><b>Material : </b> <small>100% leather</small></p>
                                 <p><b>Lining : </b> <small>100% viscose</small></p>
@@ -291,6 +294,77 @@
                         </div>
                         <div class="tab-pane fade" id="pills-reviews" role="tabpanel"
                             aria-labelledby="pills-reviews-tab">
+                            <div class="row">
+                                <div class="col-md-5 text-center">
+                                    <div class="card_rate__2">
+                                        <span class="rate-value"></span>
+                                        <div id="rate_product_readonly" class="rate"></div>
+                                        <div class="rate-total">
+                                            <span class="fa fa-user-circle"></span>
+                                            6 in Total
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card_rate">
+                                        <div class="rate_item">
+                                            <div class="rate_item__1">
+                                                <span class="fa fa-star"></span>
+                                                <span>5</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="rate_item">
+                                            <div class="rate_item__1">
+                                                <span class="fa fa-star"></span>
+                                                <span>4</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="rate_item">
+                                            <div class="rate_item__1">
+                                                <span class="fa fa-star"></span>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="rate_item">
+                                            <div class="rate_item__1">
+                                                <span class="fa fa-star"></span>
+                                                <span>2</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="rate_item">
+                                            <div class="rate_item__1">
+                                                <span class="fa fa-star"></span>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-form">Reviews</button>
+                            <p class="pl-5 __p">
+                                Reviews are voluntarily written by customers, without any compensation in return, and
+                                are visible as long as the product
+                            </p>
 
                         </div>
                     </div>
@@ -685,12 +759,43 @@
     </script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/plugins/lightSlider/js/lightslider.min.js"></script>
+    <script src="assets/js/rating.js"></script>
+
     <script src="assets/js/script.js"></script>
     <script>
         jQuery(document).ready(function () {
             (function ($) {
                 lightSlider();
             })(jQuery)
+
+            $(function () {
+
+                $("#rate_product").rating({
+                    "half": true,
+                    "value": 4,
+                    "color": "#4B160F",
+                    "click": function (e) {
+                        $('.rating .value').text(e.stars.toFixed(1));
+                    }
+
+                });
+
+            });
+            $(function () {
+
+                $("#rate_product_readonly").rating({
+                    "half": true,
+                    "value": 4,
+                    readonly: true,
+                    "color": "#4B160F",
+                    "click": function (e) {
+                        $('.rate-value').text(e.stars.toFixed(1));
+                    }
+
+                });
+
+            });
+
         });
     </script>
 </body>
