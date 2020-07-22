@@ -324,8 +324,14 @@
     }
 
     .profile-header .custom-btn {
-        width: 100px;
+        width: 120px;
         font-size: 14px;
+        line-height: 30px;
+        position: absolute;
+        right: 0;
+    }
+
+    .profile-header a.custom-btn {
         line-height: 40px;
     }
 
@@ -353,7 +359,7 @@
 
     .signin_header .content {
         position: relative;
-        bottom: 15%;
+        bottom: 15px;
         left: 3%;
     }
 
@@ -375,6 +381,16 @@
 @media screen and (max-width: 520px) {
     .signup_content .card {
         padding: 40px 18px;
+    }
+
+    .profile-header .img-user .edit-img {
+        left: 34%;
+        font-size: 13px;
+    }
+
+    .signin_header .divider::before,
+    .signin_header .divider::after {
+        width: 135.93px;
     }
 
     .product_delivered_content .product_delivered_desc {
@@ -438,6 +454,12 @@
 }
 
 @media screen and (max-width: 430px) {
+
+    .signin_header .divider::before,
+    .signin_header .divider::after {
+        width: 90.93px;
+    }
+
     footer .social>i {
         background-color: #fff;
         padding: 4px;
@@ -474,6 +496,11 @@
 
 @media screen and (max-width: 324px) {
 
+
+    .signin_header .divider::before,
+    .signin_header .divider::after {
+        width: 0;
+    }
 
     #coming_soon img {
         height: 125px;
