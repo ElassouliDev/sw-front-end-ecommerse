@@ -2779,6 +2779,11 @@ label.form-check-label {
     padding: 33px 21px;
 }
 
+.product_desc_nav #pills-tab>li .nav-link.active {
+    background: none !important;
+    color: #fff;
+}
+
 .section_product_desc .product_desc_nav ul li a {
     padding: 0 !important;
     width: 111.54px !important;

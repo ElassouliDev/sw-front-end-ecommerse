@@ -118,6 +118,10 @@ function lightSlider() {
     });
 }
 
+function aos() {
+    AOS.init();
+}
+
 jQuery(document).ready(function () {
     (function ($) {
         handleScroll();
@@ -125,6 +129,7 @@ jQuery(document).ready(function () {
         loadingBtn();
         loading();
         open_nav();
+        aos();
     })(jQuery);
 
 });

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -648,10 +649,9 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        /*jslint browser: true*/
-        /*global $, jQuery, alert*/
         (function ($) {
             'use strict';
 
@@ -670,10 +670,6 @@
                         $tab_toggle = $progressWizard.find('[data-toggle="tab"]'),
                         $tooltips = $progressWizard.find('[data-toggle="tab"][title]');
 
-                    // To do:
-                    // Disable User select drop-down after first step.
-                    // Add support for payment type switching.
-
                     //Initialize tooltips
                     $tooltips.tooltip();
 
@@ -688,12 +684,6 @@
                             return false;
                         }
                     });
-
-                    // $tab_toggle.on('click', function(event) {
-                    //     event.preventDefault();
-                    //     event.stopPropagation();
-                    //     return false;
-                    // });
 
                     $('.next-step').click(function () {
                         $tab_active = $progressWizard.find('li.active');
