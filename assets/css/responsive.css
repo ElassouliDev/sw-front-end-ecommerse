@@ -8,7 +8,7 @@
     }
 
     #header_page .filter .form-group {
-        width: 25%;
+        width: 100%;
     }
 }
 
@@ -44,7 +44,7 @@
     }
 
     .numberOfOrders span {
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
 
     #header_page .filter .form-row {
@@ -156,7 +156,7 @@
     }
 
     #page_404 img {
-        margin-top: 30px;
+        margin: 0px auto;
         height: 255px;
     }
 
@@ -239,6 +239,7 @@
 
     header .navbar-collapse ul {
         width: 100%;
+        margin-top: 10px !important;
     }
 
     .open_nav_list,
@@ -258,14 +259,14 @@
     .listNav {
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
         background: #fff;
         top: 0;
+        transform-origin: center;
         transform: scale(0);
-        transform-origin: left;
         left: 0;
         padding: 30px 20px !important;
         z-index: +999;
@@ -296,7 +297,7 @@
 
     .listNav.open {
         transform: scale(1);
-        transform-origin: left;
+        transform-origin: right;
     }
 
     .card {
@@ -341,6 +342,7 @@
 
     .card-order .all-orders .order .order-img {
         margin-bottom: 15px !important;
+        height: 230px;
     }
 
     .numberOfOrders {
