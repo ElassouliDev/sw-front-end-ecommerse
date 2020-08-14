@@ -301,7 +301,7 @@ body {
     position: relative;
     background: var(--basic-bg);
     padding: 1rem 0;
-    height: 128px;
+    height: 150px;
     transition: position .4s linear;
 }
 
@@ -453,8 +453,8 @@ header .custom-search button.btn.btn-outline-secondary.dropdown-toggle {
 }
 
 .navbar-brand {
-    width: 85px;
-    height: 61.64px;
+    width: 140px;
+    height: 71px;
 }
 
 .navbar-nav {
@@ -498,7 +498,7 @@ header .custom-search button.btn.btn-outline-secondary.dropdown-toggle {
 .listNav a {
     padding: 0 40px 0 0 !important;
     color: var(--secondary-color);
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'open_san_bold';
 }
 
@@ -511,12 +511,13 @@ header .custom-search button.btn.btn-outline-secondary.dropdown-toggle {
     height: 30px;
     line-height: 30px;
     margin-right: 10px;
+    width: 120px;
 }
 .listNav .nice-select:last-child {
     margin-right: 0;
 }
 .listNav .nice-select .list {
-
+    width: 100%;
 }
 .nice-select .option {
     padding-left: 18px !important;
@@ -1316,7 +1317,7 @@ footer .bottom-footer {
     line-height: 1.8235;
     padding: 0;
     /* padding-top: 70px !important; */
-    height: 888px;
+    /* height: 888px; */
     overflow: hidden;
 }
 

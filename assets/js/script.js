@@ -123,6 +123,21 @@ function aos() {
   AOS.init();
 }
 
+function zoomImage() {
+  $('.zoom_mw').ezPlus({
+    scrollZoom: true,
+    zoomWindowPosition: 1,
+    zoomWindowFadeIn: 500,
+    zoomWindowFadeOut: 500,
+    lensFadeIn: 500,
+    lensFadeOut: 500,
+    zoomWindowWidth: 400,
+    lensSize: 10,
+    zoomWindowHeight: 600,
+    easing: true
+  });
+}
+
 jQuery(document).ready(function () {
   (function ($) {
     handleScroll();
@@ -132,5 +147,6 @@ jQuery(document).ready(function () {
     open_nav();
     aos();
     niceSelect();
+    zoomImage();
   })(jQuery);
 });

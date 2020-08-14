@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -517,21 +519,34 @@
                             <label for="" class="">Filter</label>
                             <div class="form-group">
                                 <select id="" class="form-control">
-                                    <option selected>All Categories</option>
-                                    <option>...</option>
+                                    <option data-display="Choose">Choose</option>
+                                    <option value="" selected>All Categories</option>
+                                    <option>
+                                        Mat <span class="fa fa-chevron-right float-right"></span>
+                                    </option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <select id="" class="form-control">
-                                    <option selected>Choose</option>
+                                    <option selected data-display="Choose">Choose</option>
                                     <option>...</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <select id="" class="form-control">
-                                    <option selected>Price</option>
-                                    <option>...</option>
-                                </select>
+                                <div class="dropdown dropdown-price form-control p-0">
+                                    <button class="dropdown-toggle d-block w-100 p-2" id="dropdownMenuButton"
+                                        aria-haspopup="true" aria-expanded="false" type="button"
+                                        data-toggle="dropdown">Price</button>
+                                    <div class="dropdown-menu w-100" aria-labelledby="dLabel">
+                                        <div id="slider"></div>
+                                        <div class="d-flex justify-content-center align-content-center mt-3">
+                                            <label for=""><span>min</span>
+                                                <input type="text" class="disabled" name="min" disabled></label>
+                                            <label for=""><span>max</span>
+                                                <input type="text" class="disabled" disabled name="max"></label> ​
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -1137,7 +1152,47 @@
     </script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        function formatSliderValues(value) {
+            if (value == null) return 'Any';
+
+            /* This code formats a number in a human value, by adding separators (forces 2 decimal).
+               Ex."12345.67" to "12,345.67"
+            */
+            var formattedNumber = value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+            return '$' + formattedNumber;
+        }
+
+        /* map slider values */
+        var values = [0, 100, 200, 500, 1000, 1500, null];
+
+        /* init widget */
+        $("#slider").slider({
+            range: true,
+            max: values.length - 1,
+            values: [values[0], values.length - 1],
+            slide: function (event, ui) {
+                var min = values[ui.values[0]];
+                var max = values[ui.values[1]];
+                $("[name=min]").val(formatSliderValues(min));
+                $("[name=max]").val(formatSliderValues(max));
+                $("#min").text(formatSliderValues(min));
+                $("#max").text(formatSliderValues(max));
+            }
+        });
+
+        /* show initial values */
+        var min = values[$("#slider").slider("values", 0)];
+        var max = values[$("#slider").slider("values", 1)];
+        $("[name=min]").val(formatSliderValues(min));
+        $("[name=max]").val(formatSliderValues(max));
+        $("#min").text(formatSliderValues(min));
+        $("#max").text(formatSliderValues(max));
+
+    </script>
 </body>
 
 </html>
