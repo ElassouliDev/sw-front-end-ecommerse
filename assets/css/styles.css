@@ -736,6 +736,7 @@ header .custom-search button.btn.btn-outline-secondary.dropdown-toggle {
     font-weight: bolder;
     font-size: 15px;
     font-family: 'open_san_bold';
+    order: 2;
 }
 
 .swiper-slide .content h5 span {
@@ -1287,6 +1288,7 @@ footer .bottom-footer {
     background: #fff;
     border-radius: 50%;
     text-align: center;
+    background: white url(../icons/bars.png) no-repeat scroll 50% 50%;
     width: 26px;
     height: 26px;
     -webkit-text-stroke-width: medium;
