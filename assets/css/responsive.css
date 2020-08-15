@@ -92,6 +92,9 @@
     .section_product_desc .product_desc_img {
         width: 100%;
     }
+    .your-points {
+        margin-top: 20px;
+    }
 
     #header_page .filter .form-row {
         justify-content: flex-start;

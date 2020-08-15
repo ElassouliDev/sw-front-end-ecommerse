@@ -1029,7 +1029,9 @@ footer .bottom-footer {
     color: var(--secondary-color);
     margin: 1rem auto;
 }
-
+#page_404 .content p {
+    margin-bottom: 40px;
+}
 #page_404 .content h1 span {
     color: var(--basic-color);
 }
@@ -1688,6 +1690,8 @@ footer .bottom-footer {
     background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(246, 195, 78, 0.4) !important;
+    width: 100%;
+    height: 100%;
 }
 
 .signin_header .wrapper {
@@ -1699,8 +1703,8 @@ footer .bottom-footer {
 .signin_header .card {
     width: 482px;
     height: auto;
-    margin-top: 10.4%;
-    padding: 23px 18px;
+    margin-top: 29px;
+    padding: 10px 18px;
     text-align: center;
     color: var(--secondary-color);
 }
@@ -1718,7 +1722,7 @@ footer .bottom-footer {
 .signin_header .card .card-header p {
     width: 80%;
     margin: auto;
-    margin-top: 17px;
+    margin-top: 9px;
     font-size: 12px;
 }
 
@@ -2229,13 +2233,16 @@ footer .bottom-footer {
     font-size: 23px;
     font-family: 'open_san_bold';
     color: var(--secondary-color);
-    margin-bottom: 47px !important;
 }
 
 .numberOfOrders span {
     font-size: 67px;
+    font-family: 'open_san_bold';
     color: var(--basic-color);
-    /* padding-left: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
 }
 
 .numberOfOrders span small {

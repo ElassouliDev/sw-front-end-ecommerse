@@ -13,58 +13,7 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script>
-        window.onload = function () {
 
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                theme: "light2", // "light1", "light2", "dark1", "dark2"
-                axisY: {
-                    valueFormatString: " #'%' ",
-                    tickLength: 0
-                },
-                data: [{
-                    type: "column",
-                    showInLegend: true,
-                    // type: "spline",
-                    xValueFormatString: "",
-                    yValueFormatString: "#'%'",
-                    // legendMarkerColor: "grey",
-                    dataPointWidth: 3,
-                    // zoomEnabled: true,
-                    // legendText: "MMbbl = one million barrels",
-                    color: '#FDDA76',
-                    axisY: {
-                        valueFormatString: "#'%'", // move comma to change formatting
-                        prefix: "#'%'"
-                    },
-                    dataPoints: [{
-                            y: 24,
-                            label: "2019"
-                        },
-                        {
-                            y: 20,
-                            label: "2020"
-                        },
-                        {
-                            y: 90,
-                            label: "Canada"
-                        },
-                        {
-                            y: 3,
-                            label: "2021"
-                        },
-                        {
-                            y: 6.7,
-                            label: "2022"
-                        },
-                    ]
-                }]
-            });
-            chart.render();
-
-        }
-    </script>
 </head>
 
 <body>
@@ -204,8 +153,7 @@
     <section id="header_page" class="user-profile">
         <div class="wrapper">
             <div class="row">
-                <div class="col-md-5" data-aos="zoom-out" data-aos-duration="1000"
-                    data-aos-anchor-placement="center-buttom">
+                <div class="col-md-5" data-aos="zoom-out" data-aos-duration="1000">
                     <div class="card-user">
                         <div class="head-img">
                             <img class="img-fluid" src="assets/images/3.png" alt="">
@@ -230,43 +178,42 @@
                     <div class="your-points">
                         <h3>Your Points</h3>
                         <p>This is your account dashboard which enables you to view your account activities.</p>
-                        <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+                        <canvas id="chBar" height="210"></canvas>
                     </div>
                 </div>
             </div>
-            <div class="btns-information row" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-anchor-placement="center-buttom">
-                <div class="col-md-3 col-xs-12">
+            <div class="btns-information row" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="profile.html">Profile</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="addresses.html">Addresses</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="payment-methods.html">Payment Methods</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="manage-credit-cards.html">Manage Credit Cards</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="orders.html">Orders</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="favorite.html">Favorite</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="most-bought.html">Most Bought</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="points.html">Points</a>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
                     <a href="logout.html">Logout</a>
                 </div>
             </div>
 
             <div class="newsletter-settings" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-anchor-placement="center-buttom">
+                data-aos-anchor-placement="center">
                 <h3>Your Newsletter Settings</h3>
                 <hr>
                 <form action="">
@@ -291,15 +238,14 @@
                         <li>
                             <h6><a href="information.html">Information</a></h6>
                         </li>
-                        <li><a href="blitzz.html">Blitzz</a></li>
-                        <li><a href="">Newsletter</a></li>
-                        <li><a href="cookie_settings.html">Cookie Settings</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="discount_code.html">Discount Code</a></li>
+                        <li><a href="info_points.html">Points</a></li>
+                        <li><a href="info_payments.html">Payment Methods</a></li>
+                        <li><a href="privacy.html">Privacy Policies</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="reverse_policies.html">Reverse Policies</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
-                        <li><a href="imprint.html">Imprint</a></li>
-                        <li><a href="shipping_payment.html">Shipping & Payment</a></li>
-                        <li><a href="privacy.html">Privacy & Policy</a></li>
-                        <li><a href="right-of-withdrawal.html">Right Of Withdrawal</a></li>
-                        <li><a href="help.html">Help / Support</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
@@ -455,11 +401,196 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
 
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script>
+
+        // chart colors
+        var colors = ['#FDDA76', '#FDD365', '#F6C34E', '#DDA534', '#E4AD39', '#FDCB58', '#FDFF8F'];
+
+        /* bar chart */
+
+        var chBar = document.getElementById('chBar');
+        var ctx = chBar.getContext('2d');
+        if (ctx) {
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                    datasets: [{
+                        data: [20, 42, 66, 30, 84, 74, 53],
+                        backgroundColor: colors[1],
+                        callback: function (value) {
+                            return value + "%"
+                        }
+
+                    }]
+                },
+                options: {
+                    barRoundness: 0.3,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        mode: 'label',
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                            }
+                        }
+                    },
+                    borderWidth: '2px',
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                display: false,
+                            },
+                            barPercentage: 0.6,
+                            categoryPercentage: 0.5
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                stepSize: 10,
+                                min: 0,
+                                max: 100,
+                                callback: function (value) {
+                                    return value + "%"
+                                }
+                            },
+                            gridLines: {
+                                borderDash: [2, 1],
+                                color: "#4b160f26"
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+        Chart.elements.Rectangle.prototype.draw = function () {
+
+            var ctx = this._chart.ctx;
+            var vm = this._view;
+            var left, right, top, bottom, signX, signY, borderSkipped, radius;
+            var borderWidth = vm.borderWidth;
+            var cornerRadius = 20;
+
+            if (!vm.horizontal) {
+                // bar
+                left = vm.x - vm.width / 2;
+                right = vm.x + vm.width / 2;
+                top = vm.y;
+                bottom = vm.base;
+                signX = 1;
+                signY = bottom > top ? 1 : -1;
+                borderSkipped = vm.borderSkipped || 'bottom';
+            } else {
+                // horizontal bar
+                left = vm.base;
+                right = vm.x;
+                top = vm.y - vm.height / 2;
+                bottom = vm.y + vm.height / 2;
+                signX = right > left ? 1 : -1;
+                signY = 1;
+                borderSkipped = vm.borderSkipped || 'left';
+            }
+
+            // Canvas doesn't allow us to stroke inside the width so we can
+            // adjust the sizes to fit if we're setting a stroke on the line
+            if (borderWidth) {
+                // borderWidth shold be less than bar width and bar height.
+                var barSize = Math.min(Math.abs(left - right), Math.abs(top - bottom));
+                borderWidth = borderWidth > barSize ? barSize : borderWidth;
+                var halfStroke = borderWidth / 2;
+                // Adjust borderWidth when bar top position is near vm.base(zero).
+                var borderLeft = left + (borderSkipped !== 'left' ? halfStroke * signX : 0);
+                var borderRight = right + (borderSkipped !== 'right' ? -halfStroke * signX : 0);
+                var borderTop = top + (borderSkipped !== 'top' ? halfStroke * signY : 0);
+                var borderBottom = bottom + (borderSkipped !== 'bottom' ? -halfStroke * signY : 0);
+                // not become a vertical line?
+                if (borderLeft !== borderRight) {
+                    top = borderTop;
+                    bottom = borderBottom;
+                }
+                // not become a horizontal line?
+                if (borderTop !== borderBottom) {
+                    left = borderLeft;
+                    right = borderRight;
+                }
+            }
+
+            ctx.beginPath();
+            ctx.fillStyle = vm.backgroundColor;
+            ctx.strokeStyle = vm.borderColor;
+            ctx.lineWidth = borderWidth;
+
+            // Corner points, from bottom-left to bottom-right clockwise
+            // | 1 2 |
+            // | 0 3 |
+            var corners = [
+                [left, bottom],
+                [left, top],
+                [right, top],
+                [right, bottom]
+            ];
+
+            // Find first (starting) corner with fallback to 'bottom'
+            var borders = ['bottom', 'left', 'top', 'right'];
+            var startCorner = borders.indexOf(borderSkipped, 0);
+            if (startCorner === -1) {
+                startCorner = 0;
+            }
+
+            function cornerAt(index) {
+                return corners[(startCorner + index) % 4];
+            }
+
+            // Draw rectangle from 'startCorner'
+            var corner = cornerAt(0);
+            ctx.moveTo(corner[0], corner[1]);
+
+            for (var i = 1; i < 4; i++) {
+                corner = cornerAt(i);
+                nextCornerId = i + 1;
+                if (nextCornerId == 4) {
+                    nextCornerId = 0
+                }
+
+                nextCorner = cornerAt(nextCornerId);
+
+                width = corners[2][0] - corners[1][0];
+                height = corners[0][1] - corners[1][1];
+                x = corners[1][0];
+                y = corners[1][1];
+
+                var radius = cornerRadius;
+
+                // Fix radius being too large
+                if (radius > height / 2) {
+                    radius = height / 2;
+                } if (radius > width / 2) {
+                    radius = width / 2;
+                }
+
+                ctx.moveTo(x + radius, y);
+                ctx.lineTo(x + width - radius, y);
+                ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+                ctx.lineTo(x + width, y + height - radius);
+                ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+                ctx.lineTo(x + radius, y + height);
+                ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+                ctx.lineTo(x, y + radius);
+                ctx.quadraticCurveTo(x, y, x + radius, y);
+
+            }
+
+            ctx.fill();
+            if (borderWidth) {
+                ctx.stroke();
+            }
+        }; 
+    </script>
+
     <script src="assets/js/script.js"></script>
-
-
 </body>
 
 </html>

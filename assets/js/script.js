@@ -6,8 +6,10 @@ function sliderProducts() {
     spaceBetween: 10,
     centeredSlides: true,
     grabCursor: true,
+    initialSlide: 2,
+    speed: 800,
     autoplay: {
-      delay: 2500,
+      delay: 5000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -24,7 +26,7 @@ function sliderProducts() {
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 6,
+        slidesPerView: 7,
         spaceBetween: 10,
       },
     },
