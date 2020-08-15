@@ -95,6 +95,9 @@
     .your-points {
         margin-top: 20px;
     }
+    .signin_header {
+        height: auto;
+    }
 
     #header_page .filter .form-row {
         justify-content: flex-start;
