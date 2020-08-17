@@ -149,6 +149,5 @@ jQuery(document).ready(function () {
     open_nav();
     aos();
     niceSelect();
-    zoomImage();
   })(jQuery);
 });

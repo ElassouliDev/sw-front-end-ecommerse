@@ -25,6 +25,9 @@ img {
     --basic-bg: linear-gradient(to bottom, #FDDA76, #FDD365, #F6C34E, #DDA534, #E4AD39, #FDCB58, #FDFF8F);
 }
 
+.nice-select , .nice-select .list{
+    color: var(--secondary-color) !important;
+}
 ::selection {
     background: rgba(75, 22, 15, .6);
     color: #fff;
@@ -512,6 +515,7 @@ header .custom-search button.btn.btn-outline-secondary.dropdown-toggle {
     line-height: 30px;
     margin-right: 10px;
     width: 120px;
+    
 }
 .listNav .nice-select:last-child {
     margin-right: 0;
@@ -939,7 +943,7 @@ footer .bottom-footer {
 
 #coming_soon {
     position: relative;
-    height: 998px;
+    height: 100vh;
     background-size: cover;
 }
 
@@ -958,7 +962,7 @@ footer .bottom-footer {
     width: 100%;
     margin: auto;
     display: block;
-    height: 480px;
+    height: 365px;
     max-height: 480.03px;
     position: relative;
 }
@@ -967,7 +971,6 @@ footer .bottom-footer {
 #page_404 .content {
     padding: 20px;
     text-align: center;
-    width: 47vw;
     height: 260px;
     display: block;
     margin: 0 auto;
